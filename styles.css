@@ -161,3 +161,63 @@ label[for="proofOfPayment"] {
 .feedback-message.success {
   color: #28a745;
 }
+
+.info {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.1em;
+  background-color: #333;
+  color: #fff;
+}
+
+.payment-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+}
+
+.payment-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Conteúdo interno da seção de pagamento */
+.payment-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 80%;
+  width: 100%;
+  margin-top: 15px;
+  text-align: left;
+}
+
+/* QR Code à esquerda */
+.payment-section .qrcode {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+}
+
+/* Texto da seção de pagamento */
+.payment-text {
+  flex: 1;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+  .payment-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .payment-section .qrcode {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
