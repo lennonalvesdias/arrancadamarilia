@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2ª Arrancada na Terra</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("YOUR_USER_ID"); // Substitua "YOUR_USER_ID" pelo seu ID do EmailJS
+    })();
+  </script>
+</head>
+<body>
+  <!-- Header com Sobreposição para Melhorar Legibilidade -->
+  <header class="header">
+    <div class="overlay"></div>
+    <div class="header-content">
+      <h1>ATENÇÃO, AMANTES DE VELOCIDADE!</h1>
+      <p>Estão prontos para a 2ª Arrancada na Terra?</p>
+      <a href="#inscricao" class="button">Inscreva-se Agora</a>
+    </div>
+  </header>
+
+  <!-- Formulário de Inscrição -->
+  <section id="inscricao" class="form-section">
+    <h2>Inscreva-se</h2>
+    <div id="form-container">
+      <form id="registrationForm">
+        <label for="name">Nome Completo:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="contact">Contato (Telefone ou Email):</label>
+        <input type="text" id="contact" name="contact" required>
+
+        <label for="carModel">Modelo do Carro:</label>
+        <input type="text" id="carModel" name="carModel" required>
+
+        <label for="carYear">Ano do Carro:</label>
+        <input type="number" id="carYear" name="carYear" required>
+
+        <label for="carEngine">Motorização:</label>
+        <input type="text" id="carEngine" name="carEngine" required>
+
+        <!-- Aviso sobre o envio do comprovante -->
+        <p class="warning">
+          A inscrição será confirmada após o envio do comprovante PIX para <strong>arrancadamarilia@gmail.com</strong>
+        </p>
+
+        <button type="submit" class="button">Inscreva-se Agora!</button>
+      </form>
+    </div>
+    <p id="feedbackMessage" class="feedback-message"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
