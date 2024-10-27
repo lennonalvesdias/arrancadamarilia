@@ -34,3 +34,25 @@ document.getElementById("registrationForm").addEventListener("submit", async fun
     feedbackMessage.classList.remove("success");
   }
 });
+
+function copyPixKey(button) {
+  const pixKey = document.getElementById("pixKey").textContent;
+
+  // Copia a chave PIX para a área de transferência
+  navigator.clipboard.writeText(pixKey)
+    .then(() => {
+      // Altera o texto do botão para indicar que a chave foi copiada
+      button.textContent = "Chave PIX copiada";
+      button.classList.add("copied");
+
+      // Redefine o texto do botão após 3 segundos
+      setTimeout(() => {
+        button.textContent = "Copiar chave PIX";
+        button.classList.remove("copied");
+      }, 3000);
+    })
+    .catch(err => {
+      console.error("Erro ao copiar chave PIX:", err);
+      alert("Não foi possível copiar a chave PIX. Tente novamente.");
+    });
+}

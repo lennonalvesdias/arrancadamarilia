@@ -30,13 +30,17 @@
     <p><strong>Premiações:</strong> Troféus para os 3 primeiros colocados de cada modalidade</p>
   </section>
 
-  <!-- Seção de Pagamento com QR Code -->
+  <!-- Seção de Pagamento com QR Code e Chave PIX -->
   <section class="payment-section">
     <h2>Pagamento via PIX</h2>
     <div class="payment-content">
-      <img src="qrcode.webp" alt="QR Code para pagamento PIX" class="qrcode">
+      <img src="qrcode.jpg" alt="QR Code para pagamento PIX" class="qrcode">
       <div class="payment-text">
         <p>Confirme sua inscrição fazendo o pagamento via PIX com o QR Code ao lado.</p>
+        <div class="pix-key-container">
+          <span class="pix-key" id="pixKey">arrancadamarilia@gmail.com</span>
+          <button class="copy-button" onclick="copyPixKey(this)">Copiar chave PIX</button>
+        </div>
         <p class="warning">Após o pagamento, envie o comprovante para <strong>arrancadamarilia@gmail.com</strong></p>
       </div>
     </div>

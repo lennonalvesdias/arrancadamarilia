@@ -190,13 +190,13 @@ label[for="proofOfPayment"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 850px; /* Limita a largura para centralizar melhor */
+  max-width: 900px;
   width: 100%;
   margin-top: 20px;
   gap: 20px;
 }
 
-/* QR Code centralizado */
+/* QR Code */
 .payment-section .qrcode {
   width: 200px;
   height: 200px;
@@ -206,12 +206,47 @@ label[for="proofOfPayment"] {
   background-color: #fff;
 }
 
-/* Texto centralizado */
+/* Texto e Chave PIX */
 .payment-text {
   flex: 1;
   font-size: 1.1em;
   line-height: 1.6em;
-  text-align: left; /* Mantém o alinhamento interno */
+  text-align: left;
+}
+
+.pix-key-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.pix-key {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-family: monospace;
+  margin-right: 10px;
+}
+
+.copy-button {
+  background-color: #e60000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s;
+}
+
+.copy-button:hover {
+  background-color: #cc0000;
+}
+
+.copy-button.copied {
+  background-color: #4caf50; /* Cor verde indicando sucesso */
+  cursor: default;
 }
 
 /* Ajuste para telas menores */
