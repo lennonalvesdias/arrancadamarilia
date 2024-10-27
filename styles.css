@@ -227,6 +227,10 @@ label[for="proofOfPayment"] {
   border-radius: 4px;
   font-family: monospace;
   margin-right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 400px; /* Limita a largura da chave para evitar quebra no layout */
 }
 
 .copy-button {

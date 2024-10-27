@@ -35,13 +35,13 @@ document.getElementById("registrationForm").addEventListener("submit", async fun
   }
 });
 
-function copyPixKey(button) {
-  const pixKey = document.getElementById("pixKey").textContent;
-
-  // Copia a chave PIX para a área de transferência
-  navigator.clipboard.writeText(pixKey)
+function copyPixKey() {
+  const fullPixKey = "00020126480014BR.GOV.BCB.PIX0126arrancadamarilia@gmail.com520400005303986540550.005802BR5901N6001C62110507INSCACM6304D93E";
+  
+  navigator.clipboard.writeText(fullPixKey)
     .then(() => {
       // Altera o texto do botão para indicar que a chave foi copiada
+      const button = document.querySelector(".copy-button");
       button.textContent = "Chave PIX copiada";
       button.classList.add("copied");
 
